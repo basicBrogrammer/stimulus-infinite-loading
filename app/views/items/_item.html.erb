@@ -1,0 +1,18 @@
+<div class="mdc-card demo-card" style='margin: 1rem'>
+  <div class="mdc-card__primary-action demo-card__primary-action" tabindex="0">
+    <div class="demo-card__primary">
+      <h2 class="demo-card__title mdc-typography mdc-typography--headline6"><%= item.name %> </h2>
+      <h3 class="demo-card__subtitle mdc-typography mdc-typography--subtitle2"><%= item.description %> </h3>
+    </div>
+    <div class="demo-card__secondary mdc-typography mdc-typography--body2">Visit ten places on our planet that are undergoing the biggest changes today.</div>
+  </div>
+  <div class="mdc-card__actions">
+    <div class="mdc-card__action-buttons">
+      <td><%= link_to 'Show', item, class: 'mdc-button mdc-card__action mdc-card__action--button' %></td>
+      <td><%= link_to 'Edit', edit_item_path(item), class: 'mdc-button mdc-card__action mdc-card__action--button' %></td>
+    </div>
+    <div class="mdc-card__action-icons">
+      <%= link_to 'delete', item, method: :delete, data: { confirm: 'Are you sure?', 'mdc-ripple-is-unbounded': true }, class: 'mdc-icon-button material-icons mdc-card__action mdc-card__action--icon--unbounded' %>
+    </div>
+  </div>
+</div>

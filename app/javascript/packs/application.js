@@ -17,3 +17,4 @@ require("channels")
 // const imagePath = (name) => images(name, true)
 
 import "controllers"
+import 'material-components-web/dist/material-components-web.css'
