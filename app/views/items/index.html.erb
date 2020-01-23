@@ -6,10 +6,18 @@
 
 <br>
 <div class="mdc-layout-grid">
-  <div class="mdc-layout-grid__inner">
-    <div class="mdc-layout-grid__cell"></div>
+  <div class="mdc-layout-grid__inner" data-controller='items' data-items-token=<%= @token %> data-items-limit='10'>
     <div class="mdc-layout-grid__cell">
-      <%= render @items %>
+      <div style='position: fixed;'>
+        <p>Loading: <span data-target='items.loadingStat'></span> </p>
+        <p>Number of Items: <span data-target='items.itemsCount'></span> </p>
+        <p>HasMore: <span data-target='items.hasMoreStat'></span> </p>
+        <p>Number of requested: <span data-target='items.requestsStat'> 0</span> </p>
+      </div>
+    </div>
+    <div class="mdc-layout-grid__cell">
+      <div data-target='items.container'></div>
+      <div data-target='items.loading'> <p> Loading...</p></div>
     </div>
     <div class="mdc-layout-grid__cell"></div>
   </div>
