@@ -6,7 +6,6 @@ class ItemsController < ApplicationController
   # GET /items
   # GET /items.json
   def index
-    @items = Item.all
     @token = SecureRandom.hex
   end
 
