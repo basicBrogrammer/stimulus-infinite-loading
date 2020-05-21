@@ -7,6 +7,7 @@ class ItemsController < ApplicationController
   # GET /items.json
   def index
     @token = SecureRandom.hex
+    @items = Item.all
   end
 
   # GET /items/1
@@ -70,6 +71,6 @@ class ItemsController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def item_params
-    params.require(:item).permit(:name, :description)
+    params.require(:item).permit(:name, :description, comment_attributes: %i[message username])
   end
 end

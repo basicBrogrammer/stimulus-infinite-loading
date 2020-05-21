@@ -5,6 +5,7 @@
 <%= link_to 'New Item', new_item_path %>
 
 <br>
+<%# <%= render @items %> %>
 <div class="mdc-layout-grid">
   <div class="mdc-layout-grid__inner" data-controller='items' data-items-token=<%= @token %> data-items-limit='10'>
     <div class="mdc-layout-grid__cell">

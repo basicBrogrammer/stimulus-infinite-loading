@@ -21,6 +21,7 @@ gem 'turbolinks', '~> 5'
 gem 'faker'
 gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
+gem 'actionview-component'
 gem 'anycable-rails'
 gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password

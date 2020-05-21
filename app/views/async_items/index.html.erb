@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Items</h1>
+
+<%= link_to 'New Item', new_item_path %>
+
+<br>
+
+<div class="mdc-layout-grid">
+  <div class="mdc-layout-grid__inner" >
+    <div class="mdc-layout-grid__cell"></div>
+    <div class="mdc-layout-grid__cell">
+      <%= render AsyncItemComponent %>
+    </div>
+    <div class="mdc-layout-grid__cell"></div>
+  </div>
+</div>

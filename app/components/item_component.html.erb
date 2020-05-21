@@ -17,14 +17,6 @@
   <hr>
 
   <div class='comments'>
-    <% item.comments.each do |comment| %>
-      <p> <%= comment.message %> </p>
-    <% end %>
-    <%= form_with model: item do |f| %>
-      <%= f.fields_for :comments do |comments_form| %>
-        <%= comments_form.text_field :message %>
-      <% end %>
-      <%= f.submit 'Send it' %>
-    <% end %>
+    <h2> Comments go here... </h2>
   </div>
 </div>

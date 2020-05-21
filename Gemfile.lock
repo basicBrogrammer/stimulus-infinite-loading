@@ -37,6 +37,7 @@ GEM
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
+    actionview-component (1.8.1)
     activejob (6.0.2.1)
       activesupport (= 6.0.2.1)
       globalid (>= 0.3.6)
@@ -216,6 +217,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  actionview-component
   anycable-rails
   bootsnap (>= 1.4.2)
   byebug
